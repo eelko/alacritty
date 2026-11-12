@@ -2,6 +2,16 @@
 
 opacity = 0.95
 
+# decorations = "Full" | "None" | "Transparent" | "Buttonless"
+decorations = "None"
+
+# startup_mode = "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
+startup_mode = "Maximized" 
+
+[terminal.shell]
+# Script from home.nix: attach to a detached tmux session, else start a new one
+program = "tmux-attach-or-new"
+
 [font]
 size = 10.0
 normal = { family = "JetBrainsMonoNerdFont", style = "Regular" }
